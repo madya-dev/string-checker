@@ -1,0 +1,25 @@
+K -> S P
+K -> S P Ket
+K -> S P Pel
+K -> S P Pel Ket
+K -> S P O
+K -> S P O Ket
+K -> S P O Pel
+S -> NP
+P -> VP | PP | AdjP
+O -> NP
+Pel -> PP | NP
+Ket -> PP | AdjP
+NP -> NP PropNoun | NP Pronoun | NP Noun | NP NumP | NumP NP | NP Adj | PropNoun | Pronoun | Noun
+VP -> VP Adv | VP Adj | Adv VP | Pronoun VP | Verb
+PP -> Prep NP | Prep VP | Prep AdjP | Prep VP NP
+AdjP -> Adv AdjP | Adj
+NumP -> Num
+Noun -> sekolah | bantuan | keluarga | latihan | soft skill | orang | bu | pengeluaran | bulan | anak | kampus | ruangan | catatan | saat | ayah | kantor | tadi | pagi | barang | tugas | kelompok | hari | sabtu | lalu | orang | hal-hal | politik | kakak | keponakan | lapangan | basket | orang tuanya | kecantikan | seorang | bidadari | foto | email | kekurangan | aplikasi | baju | dalam | lemari | adik | piring | atas | meja | bukit | kucing | mobil | dekat | pabrik | gadis | jejaka | balik | jendela | belakang | luar | rumah | aktris | layar | penyakit | tanaman | kekeringan | soal | nomor | nenek | tahun | rapat | awal | pernikahan
+Pronoun -> mereka | saya | anda | ini | ia | tersebut | dia | itu | tersebut | kami | beliau
+PropNoun -> Irma | Ana | Anto | Budi | Amerika | Nyoman | Bandung
+Adv -> akan | sangat | sedang | baru | saja | sudah | tidak | boleh | belum | sekali | tentu | harus | sering | hampir | selalu | juga
+Adj -> penting | keras | mandiri | kecil | baru | hormat | sendiri
+Num -> semua | satu | lima belas
+Verb -> pergi | berterima-kasih | mencatat | datang | bekerja | merokok | ditemukan | menyentuh | dibuat | berangkat | menangis | tersedu-sedu | paham | mencari kerja | berkunjung | berlari | berada | bersikap | kirim | berbicara | meletakkan | meloncat | tinggal | mengintip | masuk | duduk | bersiap-siap | masuk | mati | mengerjakan | berjalan | terpilih | pindah | ikut | bertemu | memiliki
+Prep -> ke | atas | bagi | dalam | dari | demi | di | hingga | oleh | pada | sampai | sejak | tentang | untuk | bersama | beserta | menuju | terhadap | bagaikan | melalui | mengenai | karena | sebab | selain | dengan
