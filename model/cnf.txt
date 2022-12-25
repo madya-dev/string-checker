@@ -1,25 +1,58 @@
 K -> S P
-K -> S P Ket
-K -> S P Pel
-K -> S P Pel Ket
-K -> S P O
-K -> S P O Ket
-K -> S P O Pel
-S -> NP
-P -> VP | PP | AdjP
-O -> NP
-Pel -> PP | NP
-Ket -> PP | AdjP
-NP -> NP PropNoun | NP Pronoun | NP Noun | NP NumP | NumP NP | NP Adj | PropNoun | Pronoun | Noun
-VP -> VP Adv | VP Adj | Adv VP | Pronoun VP | Verb
-PP -> Prep NP | Prep VP | Prep AdjP | Prep VP NP
-AdjP -> Adv AdjP | Adj
-NumP -> Num
-Noun -> sekolah | bantuan | keluarga | latihan | soft skill | orang | bu | pengeluaran | bulan | anak | kampus | ruangan | catatan | saat | ayah | kantor | tadi | pagi | barang | tugas | kelompok | hari | sabtu | lalu | orang | hal-hal | politik | kakak | keponakan | lapangan | basket | orang tuanya | kecantikan | seorang | bidadari | foto | email | kekurangan | aplikasi | baju | dalam | lemari | adik | piring | atas | meja | bukit | kucing | mobil | dekat | pabrik | gadis | jejaka | balik | jendela | belakang | luar | rumah | aktris | layar | penyakit | tanaman | kekeringan | soal | nomor | nenek | tahun | rapat | awal | pernikahan
-Pronoun -> mereka | saya | anda | ini | ia | tersebut | dia | itu | tersebut | kami | beliau
-PropNoun -> Irma | Ana | Anto | Budi | Amerika | Nyoman | Bandung
-Adv -> akan | sangat | sedang | baru | saja | sudah | tidak | boleh | belum | sekali | tentu | harus | sering | hampir | selalu | juga
-Adj -> penting | keras | mandiri | kecil | baru | hormat | sendiri
-Num -> semua | satu | lima belas
-Verb -> pergi | berterima-kasih | mencatat | datang | bekerja | merokok | ditemukan | menyentuh | dibuat | berangkat | menangis | tersedu-sedu | paham | mencari kerja | berkunjung | berlari | berada | bersikap | kirim | berbicara | meletakkan | meloncat | tinggal | mengintip | masuk | duduk | bersiap-siap | masuk | mati | mengerjakan | berjalan | terpilih | pindah | ikut | bertemu | memiliki
-Prep -> ke | atas | bagi | dalam | dari | demi | di | hingga | oleh | pada | sampai | sejak | tentang | untuk | bersama | beserta | menuju | terhadap | bagaikan | melalui | mengenai | karena | sebab | selain | dengan
+K -> K1 Ket
+K -> K1 Pel
+K -> K2 Ket
+K -> K1 O
+K -> K3 Ket
+K -> K3 Pel
+K1 -> S P
+K2 -> K1 Pel
+K3 -> K1 O
+S -> NP Noun | NP NumP | NP AdjP | NP PropNoun
+S -> Kevin | Bali | Manado | Albert | Yoga | Desi | Yudi | Jakarta | Abdi | Ata | Jalan Jimbaran | Denpasar | Bintang | Putu | Ronaldo | Widya | Wulan | Made | Puncak Bogor | Kota Yogyakarta | Ana
+S -> ilmu | hari | nanti | proses | pencarian | korban | saat | terima kasih | perhatian | teman-teman | dosen | kampus | kakeknya | kampus | kemarin | juara | kelas | kalinya | diri | kamar | motor | toko | sepatu | sementara | waktu | bapak | temannya | sekolah | wabah | penyakit | game | orang | sepanjang | perjalanan | masa | depan | ayah | luar | kota | musibah | banjir | hal | bunga | kebun | guru | kaki | rumah | sepeda | samping | danau | hari | wanita | laki-laki | bank | suasana | kampung | pertunjukkan | perhatian | orang-orang | sekitar | tempat | senyuman | hati | sikap | pertandingan | sepak bola | museum | negara | kantor | anak-anak | kali | bola | lapangan | orang tua | anak-anaknya | petang | jutawan | orang tuanya | rasa | cicak | pahlawan | masa lalunya | perusahaan | bonus | karyawan | makanan | kantin | cerita | drama | kebun | teh | daerah | toko-toko | buku
+S -> kita | ini | kami | itu | mereka | dia | saya
+P -> PP | VP | AdjP
+P -> Prep NP | Prep VP | Prep PP | Prep AdjP | Prep Prep1
+P -> Adj VP | Adv VP
+P -> mencari | berjumpa | dilakukan | mengucapkan | menjadi | mempersilakan | masuk | mengurung | tutup | dipukul | diliburkan | dimainkan | bernyanyi | belajar | disebabkan | menyiram | tinggal | berjalan | ditemukan | menabung | menarik | memikat | pergi | memiliki | berlatih | menonton | mengunjungi | pulang | bermain | menendang | keluar | bekerja | berterimakasih | membahas | memberikan | dilatih | mencatat | bekerja | merokok | menyentuh | dibuat | berangkat | menangis | tersedu-sedu | paham | mencari kerja | berkunjung | berlari | berada | bersikap | kirim | berbicara | meletakkan | meloncat | tinggal | mengintip | masuk | duduk | bersiap-siap | masuk | mati | mengerjakan | berjalan | terpilih | pindah | ikut | bertemu | memiliki
+P -> Adv AdjP
+P -> pasti | serius | dini | sepi | baik | keras | takut | enak | menarik | ramah | indah | lengkap
+O -> NP Noun | NP NumP | NP AdjP
+O -> Kevin | Bali | Manado | Albert | Yoga | Desi | Yudi | Jakarta | Abdi | Ata | Jalan Jimbaran | Denpasar | Bintang | Putu | Ronaldo | Widya | Wulan | Made | Puncak Bogor | Kota Yogyakarta
+O -> ilmu | hari | nanti | proses | pencarian | korban | saat | terima kasih | perhatian | teman-teman | dosen | kampus | kakeknya | kampus | kemarin | juara | kelas | kalinya | diri | kamar | motor | toko | sepatu | sementara | waktu | bapak | temannya | sekolah | wabah | penyakit | game | orang | sepanjang | perjalanan | masa | depan | ayah | luar | kota | musibah | banjir | hal | bunga | kebun | guru | kaki | rumah | sepeda | samping | danau | hari | wanita | laki-laki | bank | suasana | kampung | pertunjukkan | perhatian | orang-orang | sekitar | tempat | senyuman | hati | sikap | pertandingan | sepak bola | museum | negara | kantor | anak-anak | kali | bola | lapangan | orang tua | anak-anaknya | petang | jutawan | orang tuanya | rasa | cicak | pahlawan | masa lalunya | perusahaan | bonus | karyawan | makanan | kantin | cerita | drama | kebun | teh | daerah | toko-toko | buku
+O -> kita | ini | kami | itu | mereka | dia | saya
+Pel -> NP | PP | VP
+Pel -> Prep NP | Prep VP | Prep PP | Prep AdjP
+Pel -> NP Noun | NP NumP | NP AdjP
+Pel -> Kevin | Bali | Manado | Albert | Yoga | Desi | Yudi | Jakarta | Abdi | Ata | Jalan Jimbaran | Denpasar | Bintang | Putu | Ronaldo | Widya | Wulan | Made | Puncak Bogor | Kota Yogyakarta
+Pel -> ilmu | hari | nanti | proses | pencarian | korban | saat | terima kasih | perhatian | teman-teman | dosen | kampus | kakeknya | kampus | kemarin | juara | kelas | kalinya | diri | kamar | motor | toko | sepatu | sementara | waktu | bapak | temannya | sekolah | wabah | penyakit | game | orang | sepanjang | perjalanan | masa | depan | ayah | luar | kota | musibah | banjir | hal | bunga | kebun | guru | kaki | rumah | sepeda | samping | danau | hari | wanita | laki-laki | bank | suasana | kampung | pertunjukkan | perhatian | orang-orang | sekitar | tempat | senyuman | hati | sikap | pertandingan | sepak bola | museum | negara | kantor | anak-anak | kali | bola | lapangan | orang tua | anak-anaknya | petang | jutawan | orang tuanya | rasa | cicak | pahlawan | masa lalunya | perusahaan | bonus | karyawan | makanan | kantin | cerita | drama | kebun | teh | daerah | toko-toko | buku | bantuan | keluarga | soft skill
+Pel -> kita | ini | kami | itu | mereka | dia | saya
+Pel -> Adj VP | Adv VP
+Pel -> mencari | berjumpa | dilakukan | mengucapkan | menjadi | mempersilakan | masuk | mengurung | tutup | dipukul | diliburkan | dimainkan | bernyanyi | belajar | disebabkan | menyiram | tinggal | berjalan | ditemukan | menabung | menarik | memikat | pergi | memiliki | berlatih | menonton | mengunjungi | pulang | bermain | menendang | keluar | bekerja | berterimakasih | membahas | memberikan | dilatih
+Ket -> Prep NP | Prep VP | Prep PP | Prep AdjP
+Ket -> NP Noun | NP NumP | NP AdjP | NumP NP
+Ket -> Kevin | Bali | Manado | Albert | Yoga | Desi | Yudi | Jakarta | Abdi | Ata | Jalan Jimbaran | Denpasar | Bintang | Putu | Ronaldo | Widya | Wulan | Made | Puncak Bogor | Kota Yogyakarta
+Ket -> ilmu | hari | nanti | proses | pencarian | korban | saat | terima kasih | perhatian | teman-teman | dosen | kampus | kakeknya | kampus | kemarin | juara | kelas | kalinya | diri | kamar | motor | toko | sepatu | sementara | waktu | bapak | temannya | sekolah | wabah | penyakit | game | orang | sepanjang | perjalanan | masa | depan | ayah | luar | kota | musibah | banjir | hal | bunga | kebun | guru | kaki | rumah | sepeda | samping | danau | hari | wanita | laki-laki | bank | suasana | kampung | pertunjukkan | perhatian | orang-orang | sekitar | tempat | senyuman | hati | sikap | pertandingan | sepak bola | museum | negara | kantor | anak-anak | kali | bola | lapangan | orang tua | anak-anaknya | petang | jutawan | orang tuanya | rasa | cicak | pahlawan | masa lalunya | perusahaan | bonus | karyawan | makanan | kantin | cerita | drama | kebun | teh | daerah | toko-toko | buku | ruangan | pengeluaran | bulan | anak | kampus | ruangan | catatan | saat | ayah | kantor | tadi | pagi | barang | tugas | kelompok | hari | sabtu | lalu | orang | hal-hal | politik | kakak | keponakan | lapangan | basket | orang tuanya | kecantikan | seorang | bidadari | foto | email | kekurangan | aplikasi | baju | dalam | lemari | adik | piring | atas | meja | bukit | kucing | mobil | dekat | pabrik | gadis | jejaka | balik | jendela | belakang | luar | rumah | aktris | layar | penyakit | tanaman | kekeringan | soal | nomor | nenek | tahun | rapat | awal | pernikahan
+Ket -> kita | ini | kami | itu | mereka | dia | saya
+NP -> NP Noun | NP NumP | NP AdjP | NP Pronoun
+NP -> Kevin | Bali | Manado | Albert | Yoga | Desi | Yudi | Jakarta | Abdi | Ata | Jalan Jimbaran | Denpasar | Bintang | Putu | Ronaldo | Widya | Wulan | Made | Puncak Bogor | Kota Yogyakarta
+NP -> ilmu | hari | nanti | proses | pencarian | korban | saat | terima kasih | perhatian | teman-teman | dosen | kampus | kakeknya | kampus | kemarin | juara | kelas | kalinya | diri | kamar | motor | toko | sepatu | sementara | waktu | bapak | temannya | sekolah | wabah | penyakit | game | orang | sepanjang | perjalanan | masa | depan | ayah | luar | kota | musibah | banjir | hal | bunga | kebun | guru | kaki | rumah | sepeda | samping | danau | hari | wanita | laki-laki | bank | suasana | kampung | pertunjukkan | perhatian | orang-orang | sekitar | tempat | senyuman | hati | sikap | pertandingan | sepak bola | museum | negara | kantor | anak-anak | kali | bola | lapangan | orang tua | anak-anaknya | petang | jutawan | orang tuanya | rasa | cicak | pahlawan | masa lalunya | perusahaan | bonus | karyawan | makanan | kantin | cerita | drama | kebun | teh | daerah | toko-toko | buku | ruangan | pengeluaran | bulan | anak | kampus | ruangan | catatan | saat | ayah | kantor | tadi | pagi | barang | tugas | kelompok | hari | sabtu | lalu | orang | hal-hal | politik | kakak | keponakan | lapangan | basket | orang tuanya | kecantikan | seorang | bidadari | foto | email | kekurangan | aplikasi | baju | dalam | lemari | adik | piring | atas | meja | bukit | kucing | mobil | dekat | pabrik | gadis | jejaka | balik | jendela | belakang | luar | rumah | aktris | layar | penyakit | tanaman | kekeringan | soal | nomor | nenek | tahun | rapat | awal | pernikahan
+NP -> kita | ini | kami | itu | mereka | dia | saya
+VP -> Adj VP | Adv VP
+VP -> mencari | berjumpa | dilakukan | mengucapkan | menjadi | mempersilakan | masuk | mengurung | tutup | dipukul | diliburkan | dimainkan | bernyanyi | belajar | disebabkan | menyiram | tinggal | berjalan | ditemukan | menabung | menarik | memikat | pergi | memiliki | berlatih | menonton | mengunjungi | pulang | bermain | menendang | keluar | bekerja | berterima kasih | membahas | memberikan | dilatih | mencatat | datang | bekerja | merokok | ditemukan | menyentuh | dibuat | berangkat | menangis | tersedu-sedu | paham | mencari kerja | berkunjung | berlari | berada | bersikap | kirim | berbicara | meletakkan | meloncat | tinggal | mengintip | masuk | duduk | bersiap-siap | masuk | mati | mengerjakan | berjalan | terpilih | pindah | ikut | bertemu | memiliki
+PP -> Prep NP | Prep VP | Prep PP | Prep AdjP
+AdjP -> Adv AdjP
+AdjP -> pasti | serius | dini | sepi | baik | keras | takut | enak | menarik | ramah | indah | lengkap | baru | mandiri | penting | kecil | hormat | sendiri
+AdvP -> Adv AdvP
+AdvP -> masih | akan | sangat | sudah | pernah | sungguh-sungguh | belum | sedang | harus | jarang | baru | saja
+NumP -> NumP Num
+NumP -> suatu | semua | pertama | semua | ribuan | banyak | setiap | satu | lima belas
+PropNoun -> Kevin | Bali | Manado | Albert | Yoga | Desi | Yudi | Jakarta | Abdi | Ata | Jalan Jimbaran | Denpasar | Bintang | Putu | Ronaldo | Widya | Wulan | Made | Puncak Bogor | Kota Yogyakarta | Irma | Ana | Anto | Budi | Amerika | Nyoman | Bandung
+Verb -> mencari | berjumpa | dilakukan | mengucapkan | menjadi | mempersilakan | masuk | mengurung | tutup | dipukul | diliburkan | dimainkan | bernyanyi | belajar | disebabkan | menyiram | tinggal | berjalan | ditemukan | menabung | menarik | memikat | pergi | memiliki | berlatih | menonton | mengunjungi | pulang | bermain | menendang | keluar | bekerja | berterima kasih | membahas | memberikan | dilatih | mencatat | datang | merokok | ditemukan | menyentuh | dibuat | berangkat | menangis | tersedu-sedu | paham | mencari kerja | berkunjung | berlari | berada | bersikap | kirim | berbicara | meletakkan | meloncat | tinggal | mengintip | masuk | duduk | bersiap-siap | masuk | mati | mengerjakan | berjalan | terpilih | pindah | ikut | bertemu | memiliki
+Prep -> ke | demi | pada | hingga | atas | di | dari | ke | untuk | kepada | para | oleh | karena | dengan | dalam | seperti | sampai | berkat | terhadap | tentang | bagi
+Noun -> ilmu | hari | nanti | proses | pencarian | korban | saat | terima kasih | perhatian | teman-teman | dosen | kampus | kakeknya | kampus | kemarin | juara | kelas | kalinya | diri | kamar | motor | toko | sepatu | sementara | waktu | bapak | temannya | sekolah | wabah | penyakit | game | orang | sepanjang | perjalanan | masa | depan | ayah | luar | kota | musibah | banjir | hal | bunga | kebun | guru | kaki | rumah | sepeda | samping | danau | hari | wanita | laki-laki | bank | suasana | kampung | pertunjukkan | perhatian | orang-orang | sekitar | tempat | senyuman | hati | sikap | pertandingan | sepak bola | museum | negara | kantor | anak-anak | kali | bola | lapangan | orang tua | anak-anaknya | petang | jutawan | orang tuanya | rasa | cicak | pahlawan | masa lalunya | perusahaan | bonus | karyawan | makanan | kantin | cerita | drama | kebun | teh | daerah | toko-toko | buku | bantuan | keluarga | soft skill | bu | pengeluaran | bulan | anak | kampus | ruangan | catatan | saat | ayah | kantor | tadi | pagi | barang | tugas | kelompok | hari | sabtu | lalu | orang | hal-hal | politik | kakak | keponakan | lapangan | basket | orang tuanya | kecantikan | seorang | bidadari | foto | email | kekurangan | aplikasi | baju | dalam | lemari | adik | piring | atas | meja | bukit | kucing | mobil | dekat | pabrik | gadis | jejaka | balik | jendela | belakang | luar | rumah | aktris | layar | penyakit | tanaman | kekeringan | soal | nomor | nenek | tahun | rapat | awal | pernikahan
+Adv -> masih | akan | sangat | sudah | pernah | sungguh-sungguh | belum | sedang | harus | jarang | baru | saja
+Adj -> pasti | serius | dini | sepi | baik | keras | takut | enak | menarik | ramah | indah | lengkap | baru | mandiri | penting | kecil | hormat | sendiri
+Pronoun -> kita | ini | kami | itu | mereka | dia | saya | anda | beliau | tersebut
+Num -> suatu | semua | pertama | semua | ribuan | banyak | setiap | satu | lima belas
