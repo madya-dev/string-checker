@@ -12,9 +12,12 @@ Anggota kelompok:
 2. I Made Ari Madya Santosa, 2108561020
 3. Roger Julian Sitorus, 2108561069
 4. Shiennyta Florensia Adiriyanto, 2108561074
+
 Pengampu Mata Kuliah:
 Dr. AAIN Eka Karyawati, S.Si., M.Eng.
 https://udayananetworking.unud.ac.id/lecturer/2372-anak-agung-istri-ngurah-eka-karyawati
+
 Supporting by Lab Ergonomic Computing PS Informatika FMIPA Unud
 https://if.unud.ac.id/
+
 ==============================================================
